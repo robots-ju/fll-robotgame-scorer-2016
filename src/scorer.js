@@ -294,11 +294,11 @@
 		if (missions.hasOwnProperty('m09_pieces_of_manure_in_area'))
 		{
 			/**
-			 * 2016.08.30, M09. TRAINING AND RESEARCH
+			 * 2016.11.04, M09. TRAINING AND RESEARCH
 			 * > OPTION 3: The manure samples are completely in the training & research area.
-			 * > Points: 15 per piece
+			 * > Points: 5 per piece
 			 */
-			score += missions.m09_pieces_of_manure_in_area * 15;
+			score += missions.m09_pieces_of_manure_in_area * 5;
 		}
 
 		/*
@@ -455,14 +455,14 @@
 		|
 		*/
 
-		if (missions.hasOwnProperty('m15_12_samples_in_area'))
+		if (missions.hasOwnProperty('m15_all_samples_in_area'))
 		{
 			/**
-			 * 2016.08.30, M15. MANURE
-			 * > All 12 manure samples are completely in the training and research area.
+			 * 2016.11.04, M15. MANURE
+			 * > All 7 manure samples are in the trainings area.
 			 * > Points: 5 added to mission M09
 			 */
-			score += missions.m15_12_samples_in_area ? 5 : 0;
+			score += missions.m15_all_samples_in_area ? 5 : 0;
 		}
 
 		/*

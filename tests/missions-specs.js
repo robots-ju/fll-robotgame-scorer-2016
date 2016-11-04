@@ -308,19 +308,19 @@ describe('Robot Game 2016 specifications', function() {
 		});
 
 		/**
-		 * 2016.08.30, M09. TRAINING AND RESEARCH
+		 * 2016.11.04, M09. TRAINING AND RESEARCH
 		 * > OPTION 3: The manure samples are completely in the training & research area.
-		 * > Points: 15 per piece
+		 * > Points: 5 per piece
 		 */
-		it('Scores 15 points per manure sample', function()
+		it('Scores 5 points per manure sample', function()
 		{
 			expect(FllScorer.getScore({
 				m09_pieces_of_manure_in_area: 1
-			})).toEqual(15);
+			})).toEqual(5);
 
 			expect(FllScorer.getScore({
 				m09_pieces_of_manure_in_area: 2
-			})).toEqual(15 * 2);
+			})).toEqual(5 * 2);
 
 			/**
 			 * TODO: test for max
@@ -492,14 +492,14 @@ describe('Robot Game 2016 specifications', function() {
 	describe('Mission 15', function() {
 
 		/**
-		 * 2016.08.30, M15. MANURE
-		 * > All 12 manure samples are completely in the training and research area.
+		 * 2016.11.04, M15. MANURE
+		 * > All 7 manure samples are in the trainings area.
 		 * > Points: 5 added to mission M09
 		 */
-		it('Scores 5 point to have 12 samples in area', function()
+		it('Scores 5 point to have all samples in area', function()
 		{
 			expect(FllScorer.getScore({
-				m15_12_samples_in_area: true
+				m15_all_samples_in_area: true
 			})).toEqual(5);
 		});
 
