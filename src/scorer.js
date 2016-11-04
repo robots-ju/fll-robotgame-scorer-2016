@@ -46,7 +46,7 @@
 		m14_milk_on_ramp: false,
 		m14_milk_on_ramp_alone: false,
 		m14_milk_on_ramp_alone_and_standing: false,
-		m15_12_samples_in_area: false,
+		m15_all_samples_in_area: false,
 		penalties: 0
 	};
 
